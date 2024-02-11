@@ -1,3 +1,3 @@
 document.getElementById("join").onclick = function () {
-    window.open("https://chat.qotto.app")
+    window.open("https://www.google.com")
 }
