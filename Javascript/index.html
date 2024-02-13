@@ -1,36 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My website</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IITZDANTE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class="banner">
+<div class="banner">
     <div class="navbar">
-      <img src="icons/logo.png" class="logo" alt="logo">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Clients</a></li>
-        <li><a href="#">Contrats</a></li>
-        <li><a href="#">Souscriptions</a></li>
-      </ul>
+        <img src="icons/logo.png" class="logo" alt="logo">
+        <ul>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="clients">GAMES</a></li>
+            <li><a href="#" id="contracts">About us</a></li>
+            <li><a href="chat.qotto.app" id="subscriptions">REGISTER</a></li>
+        </ul>
     </div>
 
-    <div class="content">
-      <h1>WE ARE HIRING</h1>
-        <p>Oversec is now hiring gamers to compete in the first metaverse world tournament.
-          <br> Now you can join your fellow gamers to fight it out to the finals!
+    <div class="content" id="dynamic_content">
+        <h1>WE ARE HIRING !</h1>
+        <p>iiTzDante is now hiring gamers to compete in the first metaverse world tournament.
+            <br> Now you can join your fellow gamers to fight it out to the finals!
         </p>
         <div>
-          <button type="button" id="join"><span></span>JOIN NOW</button>
-          <button type="button" id="login"><span></span>LOG IN</button>
+            <button type="button" id="join"><span></span>JOIN NOW</button>
+            <button type="button" id="login"><span></span>LOG IN</button>
 
         </div>
     </div>
 
-    <script src="script.js"></script>
-  </div>
+    <script>
+      $(document).ready(function(){
+          $("#home").click(function(){
+              $("#dynamic_content").load("home.html");
+          });
+          $("#clients").click(function(){
+              $("#dynamic_content").load("clients.html");
+          });
+
+          $("#contracts").click(function(){
+              $("#dynamic_content").load("contracts.html");
+          });
+
+          $("#subscriptions").click(function(){
+              $("#dynamic_content").load("subscriptions.html");
+          });
+      });
+    </script>
+
+</div>
 </body>
+    <div>
+        <footer class="infos" id="info">
+        <button id="faces">facebook</button>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </html>
