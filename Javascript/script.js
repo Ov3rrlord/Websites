@@ -2,7 +2,7 @@ document.getElementById("join").onclick = function () {
     window.open("pages/register.html")
 }
 document.getElementById("login").onclick = function (){
-    window.open("https://chat.qotto.app")
+    window.open("https://iitzdante.jetbrains.space")
 }
 
 document.getElementById("info").textContent = `Whatsapp`
