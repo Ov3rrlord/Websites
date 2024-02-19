@@ -10,11 +10,6 @@ document.getElementById("info").onclick = function (){
     window.open("https://web.whatsapp.com")
 }
 
-document.getElementById("faces").textContent = `Facebook`
-document.getElementById("faces").onclick = function (){
-    window.open("https://web.facebook.com")
-}
-
 document.getElementById("leave").onclick = function () {
     window.open("https://www.google.com")
 }
