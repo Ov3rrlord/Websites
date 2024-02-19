@@ -16,5 +16,5 @@ document.getElementById("faces").onclick = function (){
 }
 
 document.getElementById("leave").onclick = function () {
-    open("https://www.google.com")
+    window.open("https://www.google.com")
 }
