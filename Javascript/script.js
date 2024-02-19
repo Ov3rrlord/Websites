@@ -14,3 +14,7 @@ document.getElementById("faces").textContent = `Facebook`
 document.getElementById("faces").onclick = function (){
     window.open("https://web.facebook.com")
 }
+
+document.getElementById("leave").onclick = function () {
+    open("https://www.google.com")
+}
